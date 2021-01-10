@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spandex</title>
+</head>
+<style>
+    * {
+        margin: 0%;
+        padding: 0%;
+    }
+    .editingPlace {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #latexEditor {
+        height:auto;
+        width: 50%;
+    }
+
+    #pdfViewer {
+        width: 50%;
+    }
+
+    .header {
+        background-color: lightblue;
+        text-align: center;
+    }
+
+    .logo {
+        font-family:"Brush Script MT" , cursive;
+        font-size: 24px;
+    }
+
+    .statusEditor {
+        background-color: white;
+        font-style: italic;
+        font-weight: bold;
+        width:fit-content;
+    }
+
+    .success {
+        color: green;
+    }
+
+    .failed {
+        color: red;
+    }
+</style>
+
+<body>
+    <div id="header" class="header">
+        <h2 class="logo">Spandex</h2>
+        <p id="statusEditor" class="statusEditor failed">Editor not ready</p>
+    </div>
+
+    <div id="editingPlace" class="editingPlace">
+        <textarea rows="2" type="text" name="" id="latexEditor"></textarea>
+        <button onclick="submitPdf()" id="submit">Go!</button>
+        <embed id="pdfViewer" src="/temp/temp.pdf" type="application/pdf" height="700px" width="500">
+    </div>
+</body>
+<script src="app.js"></script>
+
+</html>

@@ -1,0 +1,20 @@
+{
+  "name": "spandex",
+  "version": "1.0.0",
+  "description": "Making it easy to compile LaTeX real-time on the web",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "author": "Mashuke Alam Jim",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "install": "^0.13.0",
+    "nodemon": "^2.0.7",
+    "shortid": "^2.2.16",
+    "uuid": "^8.3.2"
+  }
+}
